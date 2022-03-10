@@ -17,6 +17,7 @@ public class Program
             Console.WriteLine("3. Valor total de monedas");
             Console.WriteLine("4. Cantidad de monedas de una determinada denominacion");
             Console.WriteLine("5. Cantidad total de monedas de una determinada denominacion");
+            Console.WriteLine("6. Salir");
             Console.WriteLine("Ingrese una opcion");
             opcion = int.Parse(Console.ReadLine());
 
@@ -43,17 +44,13 @@ public class Program
                 case 5:
                     Console.Clear();
                     alcancia.CantidadTotalMonedasDenominacion();
-                    
                     break;
+
                 default:
-                    Console.WriteLine("Opcion no valida");
+
                     break;
             }
-            
-            
 
         } while (opcion != 6);
-
-
     }
 }
